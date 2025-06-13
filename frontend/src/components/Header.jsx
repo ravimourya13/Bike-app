@@ -23,8 +23,8 @@ export default function Header() {
     <header className={`${styles.mainHeader} ${isSticky ? styles.sticky : ""}`}>
       <nav className={`${styles.navbar} container`}>
         <Link href="/" className={styles.logo}>
-          <div style={{ position: "relative", width: "100px", height: "60px" }}>
-            <Image src="/images/logoc.png" alt="Logo" width={200} height={80} />
+          <div style={{ position: "fixed", width: "100px", height: "40px" }}>
+            <Image src="/images/logo.png" alt="Logo" width={200} height={80} margin-right={8} />
           </div>
         </Link>
 
