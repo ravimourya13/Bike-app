@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+} */
+:root {
+  --primary-color: #ec4899;
+  --white-color: #ffffff;
+  --dark-color: #111827;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  overflow-x: hidden;
+}

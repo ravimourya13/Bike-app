@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Environment config
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+
+# Mac/IDE files
+.DS_Store
+.vscode/
