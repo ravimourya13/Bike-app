@@ -24,7 +24,7 @@ export default function Header() {
       <nav className={`${styles.navbar} container`}>
         <Link href="/" className={styles.logo}>
           <div style={{ position: "relative", width: "100px", height: "60px" }}>
-            <Image src="/images/logoc.png" alt="Logo" width={200} height={80} />
+            <Image src="/images/logo.png" alt="Logo" width={200} height={80} />
           </div>
         </Link>
 
