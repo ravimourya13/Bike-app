@@ -2,26 +2,15 @@
   position: fixed;
   top: 0;
   width: 100%;
- z-index: 1000;
-    padding: 15px 0;
-    transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1000;
+  padding: 15px 0;
+  transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
 .sticky {
-    background-color: var(--white-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-}
-
-@keyframes slideDown {
-  from {
-    top: -100px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+  background-color: var(--white-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
 .navbar {
@@ -34,6 +23,15 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #e65c00;
 }
 
 .navbarToggler {
@@ -51,6 +49,18 @@
 .navLinks li {
   display: flex;
   align-items: center;
+}
+
+.navLinks li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #e65c00;
 }
 
 .navLinks li span {
@@ -99,4 +109,31 @@
 
 .btnPrimary:hover {
   background-color: #cc5200;
+}
+/* Hover underline effect */
+.navLinks li a,
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navLinks li a::after,
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #e65c00;
+  transition: width 0.3s ease;
+}
+
+.navLinks li a:hover::after,
+.logo:hover::after {
+  width: 100%;
 }

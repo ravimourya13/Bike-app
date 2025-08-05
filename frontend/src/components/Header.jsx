@@ -23,9 +23,13 @@ export default function Header() {
     <header className={`${styles.mainHeader} ${isSticky ? styles.sticky : ""}`}>
       <nav className={`${styles.navbar} container`}>
         <Link href="/" className={styles.logo}>
-          <div style={{ position: "fixed", width: "100px", height: "40px" }}>
-            <Image src="/images/logo.png" alt="Logo" width={200} height={80} margin-right={8} />
-          </div>
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={120}
+            height={100}
+          />
+          
         </Link>
 
         <div className={styles.navbarToggler} onClick={toggleMenu}>
@@ -34,7 +38,7 @@ export default function Header() {
 
         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
           <li>
-            <Link href="#">
+            <Link href="/">
               <Image
                 src="https://img.icons8.com/ios-filled/24/000000/motorcycle.png"
                 alt="New Bike"
@@ -45,7 +49,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/">
               <Image
                 src="https://img.icons8.com/ios-filled/24/000000/dirt-bike.png"
                 alt="Used Bike"
@@ -56,7 +60,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/types/ev-bikes">
               <Image
                 src="https://img.icons8.com/ios-filled/24/000000/flash-on.png"
                 alt="Electric Bike"
@@ -67,7 +71,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/types/superbikes">
               <Image
                 src="https://img.icons8.com/ios-filled/24/000000/news.png"
                 alt="News"
